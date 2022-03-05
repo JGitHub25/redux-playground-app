@@ -21,8 +21,8 @@ export const CurrentUser = () => {
       <p>Here are your favorite categories:</p>
       {interestingCategories.map((category, index) => {
         return (
-          <div>
-            <span key={index}>{category}</span>
+          <div key={index}>
+            <span>{category}</span>
             <br />
           </div>
         );
